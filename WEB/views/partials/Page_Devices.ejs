@@ -1,0 +1,9 @@
+<div class="header_Devices">
+    <a class="header_Devices">Devices</a>
+</div>
+
+<div class="ContentHolder">
+    <% data.forEach(function(entry){ %>
+        <%- include("./Subpages/systemInfo.ejs", {data:entry}) %>
+    <% }); %>
+</div>

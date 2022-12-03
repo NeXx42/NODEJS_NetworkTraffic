@@ -1,0 +1,33 @@
+<script src="/js/networkDeviceAnalyser.js"></script>
+<link rel="stylesheet" href="/css/network.css">
+
+<script> 
+    const local_ip = "<%= localData['ip'] %>"; 
+    const local_alias = "<%= localData['alias'] %>"; 
+</script>
+
+<div class="Network_Device_Wrapper">
+    <div class="Network_Device_Info">
+        <a class="Network_Device_Info_Prefix">Alias</a>
+
+        <form method="post">
+            <input id="Network_Device_Info_Alias" name="alias" placeholder="undefined">
+            <input type="submit" id="Network_Device_Info_Button" value="Register">
+        </form>
+
+        <a class="Network_Device_Info_Prefix">IP</a>
+        <a id="Network_Device_Info_IP"></a>
+    </div>
+    
+    <div class="Network_Device_Ports">
+        <a class="Network_Device_Ports">Ports</a>
+
+        <ol class="Network_Device_Ports">
+            <li class="Network_Device_Port"><a>8080 - TCP</a></li>
+        
+
+        </ol>
+    </div>
+    
+</div>
+

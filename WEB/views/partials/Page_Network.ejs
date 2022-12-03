@@ -1,0 +1,25 @@
+<script src="js/networkHandler.js"></script>
+<link rel="stylesheet" href="css/network.css">
+
+
+
+<div class="header_Devices">
+    <a class="header_Devices">Registered Network Devices</a>
+</div>
+
+<div id="Network_Registered" class="Network_ContentHolder">
+
+</div> 
+
+
+
+<div class="header_Devices">
+    <a class="header_Devices">All Network Devices</a>
+    <input type="button" onclick="location.reload()" value="Refresh" id="refreshButton" class="">
+</div>
+
+<div id="Network_All" class="Network_ContentHolder">
+    <% data.forEach(function(entry){ %>
+        <%- include("./Subpages/networkDeviceInfo.ejs", {data:entry}) %>
+    <% }); %>
+</div> 
